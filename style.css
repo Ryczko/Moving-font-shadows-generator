@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #051130;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23051130' width='11' height='11'/%3E%3Crect fill='%23061232' x='10' width='11' height='11'/%3E%3Crect fill='%23061333' y='10' width='11' height='11'/%3E%3Crect fill='%23071435' x='20' width='11' height='11'/%3E%3Crect fill='%23091537' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%230a1638' y='20' width='11' height='11'/%3E%3Crect fill='%230c173a' x='30' width='11' height='11'/%3E%3Crect fill='%230d183c' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%230f193d' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%2310193f' y='30' width='11' height='11'/%3E%3Crect fill='%23121a41' x='40' width='11' height='11'/%3E%3Crect fill='%23131b43' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23151c44' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23161d46' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23181e48' y='40' width='11' height='11'/%3E%3Crect fill='%23191f49' x='50' width='11' height='11'/%3E%3Crect fill='%231b1f4b' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%231d204d' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%231e214e' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23202250' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23222352' y='50' width='11' height='11'/%3E%3Crect fill='%23232454' x='60' width='11' height='11'/%3E%3Crect fill='%23252455' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23272557' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23282659' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%232a275a' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%232c285c' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%232e285e' x='70' width='11' height='11'/%3E%3Crect fill='%232f295f' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23312a61' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23332b63' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23352c64' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23372c66' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23392d68' x='80' width='11' height='11'/%3E%3Crect fill='%233b2e69' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%233c2f6b' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%233e2f6d' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%2340306e' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23423170' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23443272' x='90' width='11' height='11'/%3E%3Crect fill='%23463373' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23483375' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%234a3477' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%234c3578' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%234e367a' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%2350367b' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%2353377d' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%2355387f' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23573880' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23593982' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%235b3a83' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%235d3b85' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%235f3b86' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23623c88' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23643d89' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23663d8b' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23683e8c' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%236a3f8e' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%236d3f90' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%236f4091' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+:root {
+  --shadowColor1: white;
+  --shadowColor2: #1E90FF;
+  --shadowColor3: #FFD700;
+  --shadowColor4: #808080;
+  --textColor: black;
+  --shadowBlur: 0px;
+  --moveSensitivity: 20;
+  --upperCase: none;
+}
+
+.wrap {
+  width: 80vw;
+  background-color: rgba(137, 43, 226, 0.562);
+  border: 7px solid black;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  min-height: 800px;
+}
+
+.box {
+  width: 600px;
+  border: 2px dotted black;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 200px;
+  margin-top: 100px;
+  height: 300px;
+}
+
+.box .shadowText {
+
+  color: var(--textColor);
+  font-size: 100px;
+  cursor: default;
+
+  line-height: 300px;
+}
+
+.txt {
+  width: 400px;
+  height: 50px;
+  position: relative;
+  font-size: 40px;
+  border: 2px solid black;
+  outline: none;
+  transition: 0.5s;
+  display: block;
+
+  margin: 30px auto;
+}
+
+.txt:focus {
+  background-color: rgba(255, 255, 255, 0.459);
+  transform: scale(1.1);
+}
+
+.codes {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.codes h2 {
+  flex-basis: 50%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.cssCopy,
+.htmlCopy,
+.jsCopy {
+  margin: 20px 10px;
+  width: 45%;
+  flex-grow: 1;
+  min-height: 200px;
+}
+
+.jsCopy {
+  width: 90%;
+}
+
+.copyBtn {
+  margin-left: 20px;
+  width: 70px;
+  height: 40px;
+  font-size: 21px;
+}
+
+.control .shadowEdit {
+  background-color: rgba(250, 235, 215, 0.425);
+  border: 2px dotted black;
+  position: relative;
+}
+
+.control .shadowUnactive .check {
+  z-index: 3;
+  position: relative;
+}
+
+.control .shadowUnactive::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.384);
+  height: 100%;
+  width: 100%;
+}
