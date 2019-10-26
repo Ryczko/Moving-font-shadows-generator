@@ -55,8 +55,8 @@ function addValues(index, symbol1, symbol2, isForUser) {
                 y = -moveValues.xMove;
                 x = z;
             }
-            return `${comma}${x}px ${y}px ${properties.shadowBlur} ${
-             properties["shadowColor" + (index + 1).toString()] }`;
+            return `${comma}${x}px ${y}px ${properties.shadowBlur} rgba(${
+             properties["shadowColor" + (index + 1).toString()] })`;
 
         } else {
             if (comma == ",") {

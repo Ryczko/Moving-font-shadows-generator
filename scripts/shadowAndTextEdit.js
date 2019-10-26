@@ -38,7 +38,7 @@ function textUpperCase() {
 }
 upperCaseCheckbox.addEventListener("click", textUpperCase);
 
-
+txt.style.textShadow = `5px 5px ${properties.shadowBlur} ${properties.shadowColor1}`;
 //refrefhing all properties after change
 
 
@@ -49,6 +49,9 @@ function refreshProperties() {
         ),
         textColor: getComputedStyle(document.documentElement).getPropertyValue(
             "--textColor"
+        ),
+        fontWeight: getComputedStyle(document.documentElement).getPropertyValue(
+            "--fontWeight"
         ),
         shadowColor1: getComputedStyle(document.documentElement).getPropertyValue(
             "--shadowColor1"
@@ -102,6 +105,8 @@ function changeParameters() {
     refreshShadow();
     refreshAllTexrareas();
 }
+
+
 controls.forEach(control => {
     control.addEventListener("change", changeParameters);
     control.addEventListener("mousemove", changeParameters);

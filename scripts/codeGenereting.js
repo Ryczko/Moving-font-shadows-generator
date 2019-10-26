@@ -1,8 +1,8 @@
 //texareas to copy
 const areas = {
-    html: document.querySelector(".htmlCopy"),
-    css: document.querySelector(".cssCopy"),
-    js: document.querySelector(".jsCopy")
+  html: document.querySelector(".htmlCopy"),
+  css: document.querySelector(".cssCopy"),
+  js: document.querySelector(".jsCopy")
 };
 
 
@@ -11,34 +11,35 @@ const CopyButtons = document.querySelectorAll(".copyBtn");
 
 //copping text from textArea
 function copyTextfield() {
-    const place = this.dataset.field;
-    areas[place].select();
-    document.execCommand("copy");
-    console.log(areas[place]);
+  const place = this.dataset.field;
+  areas[place].select();
+  document.execCommand("copy");
+  console.log(areas[place]);
 }
 
 CopyButtons.forEach(function (el) {
-    el.addEventListener("click", copyTextfield);
+  el.addEventListener("click", copyTextfield);
 });
 
 
 //changing textareas content
 function changeHtml() {
-    areas.html.value = `
+  areas.html.value = `
       <div class="box">
         <h1 class="shadowText">${txt.textContent}</h1>
       </div>`;
 }
 
 function changeCss() {
-    areas.css.value =
-        `  .box {
+  areas.css.value =
+    `  .box {
         width: 600px;
         height: 300px;
     }       
     .box .shadowText {
         color: ${properties.textColor};
         text-transform: ${properties.upperCase};
+        font-weight: ${properties.fontWeight};
         font-size: 100px;
         cursor: default;
         line-height: 300px;
@@ -46,7 +47,7 @@ function changeCss() {
 }
 
 function changeJs() {
-    areas.js.value = `
+  areas.js.value = `
   const txt = document.querySelector(".box .shadowText");
   const box = document.querySelector(".box");
   const moveSensitivity=${properties.moveSensitivity}
@@ -71,9 +72,10 @@ function changeJs() {
 
 
 
+
 function refreshAllTexrareas() {
-    changeCss();
-    changeJs();
-    changeHtml();
+  changeCss();
+  changeJs();
+  changeHtml();
 }
 refreshAllTexrareas();

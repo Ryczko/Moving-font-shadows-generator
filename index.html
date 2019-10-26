@@ -1,86 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <script src="node_modules/vanilla-picker/dist/vanilla-picker.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <div class="wrap">
+      <div class="box">
+        <h1 class="shadowText">Text</h1>
+      </div>
+      <input type="text" class="txt" value="Text" />
 
-<body>
-  <div class="wrap">
-    <div class="box">
-      <h1 class="shadowText">Text</h1>
+      <div class="control">
+        <div class="textEdit">
+          <label
+            >Text color:
+            <div class="colorPicker textColor"></div
+          ></label>
+
+          <label class="check">
+            Uppercase <input type="checkbox" class="check upperCase"
+          /></label>
+          <label
+            >Font weight:<input
+              type="range"
+              class="editField"
+              name="fontWeight"
+              min="100"
+              max="900"
+              value="700"
+            />
+          </label>
+        </div>
+        <div class="allShadowEdit">
+          <label
+            >Shadow blur:
+            <input
+              type="range"
+              class="editField"
+              name="shadowBlur"
+              min="0"
+              max="30"
+              value="0"
+              data-sizing="px"
+            />
+          </label>
+          <label
+            >Sensitivity<input
+              type="range"
+              class="editField"
+              name="moveSensitivity"
+              min="5"
+              max="200"
+              value="15"
+          /></label>
+        </div>
+
+        <div class=" shadowEdit shadowEdit1">
+          <label class="lab"
+            >Shadow 1
+            <input type="checkbox" data-index="0" checked class="check" />
+          </label>
+          <label
+            >Text color:
+            <div class="colorPicker shadowColor1"></div
+          ></label>
+        </div>
+
+        <div class=" shadowEdit shadowEdit2 shadowUnactive">
+          <label class="lab">
+            Shadow 2 <input type="checkbox" data-index="1" class="check"
+          /></label>
+          <label
+            >Text color:
+            <div class="colorPicker shadowColor2"></div
+          ></label>
+        </div>
+
+        <div class=" shadowEdit shadowEdit3 shadowUnactive">
+          <label class="lab">
+            Shadow 3 <input type="checkbox" data-index="2" class="check"
+          /></label>
+          <label
+            >Text color:
+            <div class="colorPicker shadowColor3"></div
+          ></label>
+        </div>
+
+        <div class=" shadowEdit shadowEdit4 shadowUnactive">
+          <label class="lab">
+            Shadow 4 <input type="checkbox" data-index="3" class="check"
+          /></label>
+          <label
+            >Text color:
+            <div class="colorPicker shadowColor4"></div
+          ></label>
+        </div>
+      </div>
+
+      <div class="codes">
+        <h2>HTML <button class="copyBtn" data-field="html">Copy</button></h2>
+
+        <h2>CSS<button class="copyBtn" data-field="css">Copy</button></h2>
+
+        <textarea class="htmlCopy" readonly> </textarea>
+
+        <textarea class="cssCopy" readonly></textarea>
+
+        <h2>Js<button class="copyBtn" data-field="js">Copy</button></h2>
+
+        <textarea class="jsCopy" readonly></textarea>
+      </div>
     </div>
-    <input type="text" class="txt" value="Text" />
 
-    <div class="control">
-      <div class="textEdit">
-        <label>Text color: <input type="color" name="textColor" value="#000000" class="editField" /></label>
-
-        <label class="check"> Uppercase <input type="checkbox" class="check upperCase"></label>
-      </div>
-      <div class="allShadowEdit">
-
-        <label>Shadow blur: <input type="range" class="editField" name="shadowBlur" min="0" max="30" value="0"
-            data-sizing="px" /> </label>
-        <label>Sensitivity<input type="range" class="editField" name="moveSensitivity" min="5" max="200"
-            value="15" /></label>
-      </div>
-
-
-      <div class=" shadowEdit shadowEdit1">
-        <label class="check"> Shadow 1 <input type="checkbox" data-index="0" checked class="check"></label>
-        <label for="shadowColor1">Text color:</label>
-        <input type="color" class="editField" name="shadowColor1" value="#FFFFFF" />
-      </div>
-
-
-      <div class=" shadowEdit shadowEdit2 shadowUnactive">
-        <label class="check"> Shadow 2 <input type="checkbox" data-index="1" class="check"></label>
-        <label for="shadowColor2">Text color:</label>
-        <input type="color" class="editField" name="shadowColor2" value="#1E90FF" />
-      </div>
-
-
-      <div class=" shadowEdit shadowEdit3 shadowUnactive">
-        <label class="check"> Shadow 3 <input type="checkbox" data-index="2" class="check"></label>
-        <label for="shadowColor3">Text color:</label>
-        <input type="color" class="editField" name="shadowColor3" value="#FFD700" />
-      </div>
-
-
-      <div class=" shadowEdit shadowEdit4 shadowUnactive">
-        <label class="check"> Shadow 4 <input type="checkbox" data-index="3" class="check"></label>
-        <label for="shadowColor4">Text color:</label>
-        <input type="color" class="editField" name="shadowColor4" value="#808080" />
-      </div>
-    </div>
-
-    <div class="codes">
-      <h2>HTML <button class="copyBtn" data-field="html">Copy</button></h2>
-
-      <h2>CSS<button class="copyBtn" data-field="css">Copy</button></h2>
-
-      <textarea class="htmlCopy" readonly> </textarea>
-
-      <textarea class="cssCopy" readonly></textarea>
-
-      <h2>Js<button class="copyBtn" data-field="js">Copy</button></h2>
-
-      <textarea class="jsCopy" readonly></textarea>
-    </div>
-  </div>
-
-
-
-  <script src="scripts/shadowAndTextEdit.js"></script>
-  <script src="scripts/movingShadow.js"></script>
-  <script src="scripts/codeGenereting.js"></script>
-
-</body>
-
+    <script src="scripts/shadowAndTextEdit.js"></script>
+    <script src="scripts/movingShadow.js"></script>
+    <script src="scripts/codeGenereting.js"></script>
+    <script src="scripts/colorPicking.js"></script>
+  </body>
 </html>
