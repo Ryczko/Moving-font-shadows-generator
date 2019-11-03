@@ -65,6 +65,12 @@ function refreshProperties() {
         shadowColor4: getComputedStyle(document.documentElement).getPropertyValue(
             "--shadowColor4"
         ),
+        boxWidth: getComputedStyle(document.documentElement).getPropertyValue(
+            "--boxWidth"
+        ),
+        boxHeight: getComputedStyle(document.documentElement).getPropertyValue(
+            "--boxHeight"
+        ),
         moveSensitivity: getComputedStyle(
             document.documentElement
         ).getPropertyValue("--moveSensitivity"),

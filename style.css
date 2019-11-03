@@ -14,6 +14,8 @@ body {
 :root {
   --lineHeightToShadowEdit: 100px;
   --shadowColor1: rgb(30, 224, 150);
+  --boxWidth: 600px;
+  --boxHeight: 300px;
   --shadowColor2: #1e90ff;
   --shadowColor3: #ffd700;
   --shadowColor4: #ee5ac9;
@@ -53,14 +55,15 @@ body {
 }
 
 .box {
-  width: 600px;
+  width: var(--boxWidth);
   border: 2px dotted black;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: 100px;
   margin-top: 100px;
-  height: 300px;
+  overflow: hidden;
+  height: var(--boxHeight);
 }
 
 .box .shadowText {
@@ -68,7 +71,7 @@ body {
   font-weight: var(--fontWeight);
   font-size: 100px;
   cursor: default;
-  line-height: 300px;
+  line-height: var(--boxHeight);
 }
 
 .txt {

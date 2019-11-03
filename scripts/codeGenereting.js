@@ -33,8 +33,9 @@ function changeHtml() {
 function changeCss() {
   areas.css.value =
     `  .box {
-        width: 600px;
-        height: 300px;
+        width: ${properties.boxWidth};
+        height: ${properties.boxHeight};
+        overflow: hidden;
     }       
     .box .shadowText {
         color: ${properties.textColor};
